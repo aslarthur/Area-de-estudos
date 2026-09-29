@@ -7,11 +7,13 @@
 #unidade: 4
 
 num = int(input("Digite um número: "))
-m = num // 1000
-c = (num // 100) % 10
-d = (num // 10) % 10
-u = num % 10
-print (f"Milhar: {m}")
-print (f"Centena: {c}")
-print (f"Dezena: {d}")
-print (f"Unidade: {u}")
+print ("Calculando...")
+
+n = str(num)
+import time 
+time.sleep(3)
+
+print ("Unidade: {}".format (n [3]))
+print ("Dezena: {}".format (n [2]))
+print ("Centena: {}".format (n [1]))
+print ("Milhar: {}".format (n [0]))
