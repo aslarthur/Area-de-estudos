@@ -1,17 +1,20 @@
 #Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 
-print ("________________________________")
-frase = str(input("Digite uma frase: ")).replace(" ", "")
-print ("________________________________")
+print ()
+frase = str(input("Digite uma frase: "))
+print ()
+espaco = frase.replace (" ", "")
+maiusculo = espaco.upper()
+contagem = maiusculo.count("A")
+direita = maiusculo.find ("A") + 1
+esquerda = maiusculo.rfind ("A") + 1
+total = len (frase.replace(" ", "")) 
 
-contagem = frase.upper()
-conta = contagem.count("A")
-esquerda = contagem.find("A")
-direita = contagem.rfind("A")
-
-print (f'A frase tem {conta} letras "A"!')
-print ("_______________________________")
-print (f'A primeira letra "A" começa na palavra {esquerda}')
-print ("_______________________________")
-print (f'A última letra "A" termina na {direita} letra.')
-print ("_______________________________")
+print (f'Tem {contagem} letras "A" na palavra {frase}')
+print ()
+print (f'A letra "A" começa na {direita} palavra')
+print ()
+print (f'A letra "A" termina na {esquerda} letra.')
+print ()
+print (f'A frase "{frase}" tem {total} letras ao total')
+print ()
