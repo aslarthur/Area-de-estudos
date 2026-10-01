@@ -42,6 +42,9 @@ elif nova_cor == "AZUL CLARO":
 else:
     print ("Não encontrado. Tente novamente!")
     print (linha)
+
+
+
 print (linha)
 n1 = int(input("Digite um número: "))
 print (linha)
@@ -51,6 +54,8 @@ n3 = n1 + n2
 print (linha)
 print ("Os a soma é {}{}{} + {}{}{} = {}{}{}".format("\033[1;4;35m", n1, "\033[m","\033[1;4;32m", n2, "\033[m","\033[1;4;33m", n3, "\033[m" ))
 print (linha)
+
+
 
 nome = str(input("Digite seu nome: "))
 cores = {"limpa":"\033[m",
