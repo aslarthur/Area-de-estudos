@@ -4,7 +4,8 @@
 km = int(input("\nDigite quantos km a viagem tem: "))
 if km <= 200:
     preço = km * 0.50
-    print (f"\nVocê tem que pagar R${preço}")
+    print (f"\nVocê tem que pagar R${preço:.2f}")
 else:
     novo_preço = km * 0.45
-    print (f"\nVocê tem que pagar R${novo_preço}")
+    print (f"\nVocê tem que pagar R${novo_preço:.2f}")
+print (f"\nVocê está prestes a começar uma viagem de {km}Km")
