@@ -1,1 +1,8 @@
-#Crie um programa que leia um número inteiro e mostre na tela se ele é ÍMPAR ou PAR.
+#Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR
+
+número = int(input("Digite um número: "))
+resultado = número % 2
+if resultado == 0:
+    print ("Este número é PAR!")
+else:
+    print ("Esse número é ÍMPAR!")
