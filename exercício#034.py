@@ -1,9 +1,9 @@
-# Escreva um programa que pergunte o salario de um funcionario e calcule o valor do seu aumento.   Para salarios superiores a R$1.250,00, calcule um aumento de 10%.   Para os inferiores ou iguais, o aumento é de 15%.  
+#Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 
-salario = float(input("Digite quanto você recebe: "))
-if salario <= 1250:
-    novo_salario = salario + (salario * 15) / 100
-    print ("Seu novo salario é de: {}".format(novo_salario))
-else:
-    salario_a_mais = salario + (salario * 10) / 100
-    print ("Seu novo salario é de: {}".format(salario_a_mais))
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+maior = max(n1, n2, n3)
+menor = min(n1, n2, n3)
+print (f"O maior é {maior}")
+print (f"O menor é {menor}")

@@ -4,6 +4,7 @@ km = int(input("\nQuantos Km seu carro está? "))
 if km > 80:
     calculo = km - 80
     multa = calculo * 7 
-    print (f"\nA multa que você deve pagar é de R${multa}")
+    print (f"\nMULTADO! A multa que você deve pagar é de R${multa:2f}")
 else:
     print ("\nVocê está dentro do limite de velocidade.\n")
+print ("Tenha um bom dia! Digira com segurança!")

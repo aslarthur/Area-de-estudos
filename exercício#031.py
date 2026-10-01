@@ -1,6 +1,10 @@
-#Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO.
-ano = int(input("Digite o ano que você está: "))
-if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
-    print ("Este é um ano bissexto.")
+# Desenvolva um programa que pergunte a distância de uma viagem em Km.
+# Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km e R$0,45 para viagens mais longas.
+
+km = int(input("\nDigite quantos km a viagem tem: "))
+if km <= 200:
+    preço = km * 0.50
+    print (f"\nVocê tem que pagar R${preço}")
 else:
-    print ("Esté não é um ano bissexto.")
+    novo_preço = km * 0.45
+    print (f"\nVocê tem que pagar R${novo_preço}")
