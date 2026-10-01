@@ -7,7 +7,8 @@ print ("___________________________")
 palavra = nome.split()
 primeiro = palavra [0]
 último = palavra [- 1]
-
+print ("Muito prazer em te conhecer!")
+print ("___________________________")
 print (primeiro)
 print ("___________________________")
 print (último)
