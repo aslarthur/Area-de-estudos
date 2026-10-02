@@ -15,4 +15,4 @@ valor_final = salário * 30 / 100
 if valor_total <= valor_final:
     print ("Você PODE comprar a casa.")
 else:
-    print ("Você NÃO PODE comprar a casa.")
+    print (f"Para pagar uma casa de R${emprestimo:.2f} em {anos} anos a prestação será de R${valor_total:.2f}!\nEmpréstimo NEGADO")
