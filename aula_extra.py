@@ -25,7 +25,8 @@ while True:
     linha()
     print (f"\033[1;4;30mCinza\033[m")
     linha()
-
+    print (f"\033[30mSimples\033[m")
+    linha()
     nova_cor = str(input("Digite a cor que ira querer: "))
     linha()
     cor = nova_cor.upper().strip()
@@ -53,33 +54,60 @@ while True:
     elif cor == "CINZA":
         print (f"\033[1;4;37{cor}\033[m")
         código = "37"
+    elif cor == "SIMPLES":
+        print (f"\033[1;4;30mNENHUM\033[m")
+        código = 30
     else:
         linha()
-        print ("Cor não encontrada! Tente novamente.")
+        print (f"\033[1;4;31mCor não encontrada! Tente novamente.\033[m")
         continue
     break
 linha()
 print ("FUNDOS:")
 while True:
     linha()
-    print (f"\033[1;37;47mBranco\033[m")
+    print (f"\033[1;4;37;47mBranco\033[m")
     linha()
-    print (f"\033[1;31;41mVermelho\033[m")
+    print (f"\033[1;4;31;41mVermelho\033[m")
     linha()
-    print (f"\033[1;32;42mVerde\033[m")
+    print (f"\033[1;4;32;42mVerde\033[m")
     linha()
-    print (f"\033[1;33;43mAmarelo\033[m")
+    print (f"\033[1;4;33;43mAmarelo\033[m")
     linha()
-    print (f"\033[1;34;44mAzul\033[m")
+    print (f"\033[1;4;34;44mAzul\033[m")
     linha()
-    print (f"\033[1;35;45mRoxo\033[m")
+    print (f"\033[1;4;35;45mRoxo\033[m")
     linha()
-    print (f"\033[1;36;46mAzul claro\033[m")
+    print (f"\033[1;4;36;46mAzul claro\033[m")
     linha()
-    print (f"\033[1;30;40mCinza\033[m")
+    print (f"\033[1;4;30;40mCinza\033[m")
+    linha()
+    print (f"\033[30;4mNenhum\033[m")
     linha()
     novo_fundo = str(input("Digite o fundo que você ira querer: "))
+    linha()
     fundo = novo_fundo.upper()
     if fundo == "BRANCO":
-        print (f"\033[1;4;{código};47mFUNDO BRANCO E {cor}\033[m")
-        break
+        print (f"\033[1;4;{código};47mFUNDO: BRANCO, TEXTO: {cor}\033[m")
+    elif fundo == "VERMELHO":
+        print (f"\033[1;4;{código};41mFUNDO: VERMELHO, TEXTO: {cor}\033[m")
+    elif fundo == "VERDE":
+        print (f"\033[1;4;{código};42mFUNDO: VERDE, TEXTO: {cor}\033[m")
+    elif fundo == "AMARELO":
+        print (f"\033[1;4;{código};43mFUNDO: AMARELO, TEXTO: {cor}\033[m")
+    elif fundo == "AZUL":
+        print (f"\033[1;4;{código};44mFUNDO: AZUL, TEXTO: {cor}\033[m")
+    elif fundo == "ROXO":
+        print (f"\033[1;4;{código};45mFUNDO ROXO, TEXTO: {cor}\033[m")
+    elif fundo == "AZUL CLARO":
+        print (f"\033[1;4;{código};45mFUNDO: AZUL CLARO, TEXTO: {cor}\033[m")
+    elif fundo == "CINZA":
+        print (f"\033[1;4;{código};45mFUNDO: CINZA, TEXTO: {cor}\033[m")
+    elif fundo == "NENHUM":
+        print (f"\033[1;4;{código}mFUNDO: NENHUM, TEXTO: {cor}\033[m")
+    else:
+        linha()
+        print (f"\033[1;4;31mNão encontrado! Tente novamente.\033[m")
+        continue
+    break
+linha()
