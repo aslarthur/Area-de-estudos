@@ -29,8 +29,8 @@ while True:
     linha()
     cor = nova_cor.upper().strip()
     if cor == "BRANCO":
-        print (f"\033[1;4;30m{cor}\033[m")
-        código = "30"
+        print (f"\033[1;4;37m{cor}\033[m")
+        código = "37"
     elif cor == "VERMELHO":
         print (f"\033[1;4;31m{cor}\033[m")
         código = "31"
@@ -50,8 +50,8 @@ while True:
         print (f"\033[1;4;36m{cor}\033[m")
         código = "36"
     elif cor == "CINZA":
-        print (f"\033[1;4;37m{cor}\033[m")
-        código = "37"
+        print (f"\033[1;4;30m{cor}\033[m")
+        código = "30"
     elif cor == "SIMPLES":
         print (f"\033[1;4;30mNENHUM\033[m")
         código = "30"
