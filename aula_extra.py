@@ -21,7 +21,7 @@ while True:
     linha()
     print (f"\033[1;4;36mAzul claro\033[m")
     linha()
-    print (f"\033[1;4;30mCinza\033[m")
+    print (f"\033[1;4;90mCinza\033[m")
     linha()
     print (f"\033[30mSimples\033[m")
     linha()
@@ -50,8 +50,8 @@ while True:
         print (f"\033[1;4;36m{cor}\033[m")
         código = "36"
     elif cor == "CINZA":
-        print (f"\033[1;4;30m{cor}\033[m")
-        código = "30"
+        print (f"\033[1;4;90m{cor}\033[m")
+        código = "90"
     elif cor == "SIMPLES":
         print (f"\033[1;4;30mNENHUM\033[m")
         código = "30"
@@ -78,7 +78,7 @@ while True:
     linha()
     print (f"\033[1;4;36;46mAzul claro\033[m")
     linha()
-    print (f"\033[1;4;30;40mCinza\033[m")
+    print (f"\033[1;4;37;100mCinza\033[m")
     linha()
     print (f"\033[30;4mNenhum\033[m")
     linha()
@@ -100,7 +100,7 @@ while True:
     elif fundo == "AZUL CLARO":
         print (f"\033[1;4;{código};46mFUNDO: AZUL CLARO, TEXTO: {cor}\033[m")
     elif fundo == "CINZA":
-        print (f"\033[1;4;{código};40mFUNDO: CINZA, TEXTO: {cor}\033[m")
+        print (f"\033[1;4;{código};100mFUNDO: CINZA, TEXTO: {cor}\033[m")
     elif fundo == "NENHUM":
         print (f"\033[1;4;{código}mFUNDO: NENHUM, TEXTO: {cor}\033[m")
     else:
