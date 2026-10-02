@@ -6,11 +6,11 @@
 # Até 20 anos: SÊNIOR
 # Acima: MASTER
 idade = int(input("Digite sua idade: "))
-if idade <=9:
+if idade <9:
     print ("MIRIM")
-elif idade == 10 or idade <= 14:
+elif idade < 15:
     print ("INFANTIL")
-elif idade == 15 or idade <= 19:
+elif idade < 19:
     print ("JÚNIOR")
 elif idade == 20:
     print ("SÊNIOR")
