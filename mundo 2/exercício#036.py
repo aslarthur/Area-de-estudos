@@ -13,6 +13,6 @@ linha()
 valor_total = emprestimo / (anos * 12)
 valor_final = salário * 30 / 100
 if valor_total <= valor_final:
-    print ("Você PODE comprar a casa.")
+    print (f"Para pagar uma casa de R${emprestimo:.2f} em {anos} anos a prestação será de R${valor_total:.2f}!\nEmpréstimo pode ser CONCEDIDO!")
 else:
     print (f"Para pagar uma casa de R${emprestimo:.2f} em {anos} anos a prestação será de R${valor_total:.2f}!\nEmpréstimo NEGADO")
