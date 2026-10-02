@@ -3,3 +3,11 @@
 # Média abaixo de 5.0: REPROVADO
 # Média entre 5.0 e 6.9: RECUPERAÇÃO
 # Média 7.0 ou superior: APROVADO
+
+nota = float(input("Digite quanto você tirou: "))
+if nota < 5:
+    print ("REPROVADO")
+elif nota >=7:
+    print ("APROVADO!")
+else:
+    print ("RECUPERAÇÃO")
