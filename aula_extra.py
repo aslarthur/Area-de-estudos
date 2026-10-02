@@ -1,11 +1,9 @@
 def linha():
     print ("-=" * 30)
 while True:
-    def linha():
-       print ("-=" * 30)
     print ()
     linha()
-    print ("Bem vindo(a!")
+    print ("Bem vindo(a)!")
     linha()
     print ("CORES DE TEXTO:")
     linha()
@@ -52,11 +50,11 @@ while True:
         print (f"\033[1;4;36m{cor}\033[m")
         código = "36"
     elif cor == "CINZA":
-        print (f"\033[1;4;37{cor}\033[m")
+        print (f"\033[1;4;37m{cor}\033[m")
         código = "37"
     elif cor == "SIMPLES":
         print (f"\033[1;4;30mNENHUM\033[m")
-        código = 30
+        código = "30"
     else:
         linha()
         print (f"\033[1;4;31mCor não encontrada! Tente novamente.\033[m")
@@ -86,7 +84,7 @@ while True:
     linha()
     novo_fundo = str(input("Digite o fundo que você ira querer: "))
     linha()
-    fundo = novo_fundo.upper()
+    fundo = novo_fundo.upper().strip()
     if fundo == "BRANCO":
         print (f"\033[1;4;{código};47mFUNDO: BRANCO, TEXTO: {cor}\033[m")
     elif fundo == "VERMELHO":
@@ -98,9 +96,9 @@ while True:
     elif fundo == "AZUL":
         print (f"\033[1;4;{código};44mFUNDO: AZUL, TEXTO: {cor}\033[m")
     elif fundo == "ROXO":
-        print (f"\033[1;4;{código};45mFUNDO ROXO, TEXTO: {cor}\033[m")
+        print (f"\033[1;4;{código};45mFUNDO: ROXO, TEXTO: {cor}\033[m")
     elif fundo == "AZUL CLARO":
-        print (f"\033[1;4;{código};45mFUNDO: AZUL CLARO, TEXTO: {cor}\033[m")
+        print (f"\033[1;4;{código};46mFUNDO: AZUL CLARO, TEXTO: {cor}\033[m")
     elif fundo == "CINZA":
         print (f"\033[1;4;{código};45mFUNDO: CINZA, TEXTO: {cor}\033[m")
     elif fundo == "NENHUM":
