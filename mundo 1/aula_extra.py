@@ -109,3 +109,5 @@ while True:
         continue
     break
 linha()
+
+#AS CORES PODEM ESTAR DIFERENTE POR CONTA QUE O MEU TEMA É DIFERENTE. NÃO ME JULGUE 
