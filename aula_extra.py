@@ -100,7 +100,7 @@ while True:
     elif fundo == "AZUL CLARO":
         print (f"\033[1;4;{código};46mFUNDO: AZUL CLARO, TEXTO: {cor}\033[m")
     elif fundo == "CINZA":
-        print (f"\033[1;4;{código};45mFUNDO: CINZA, TEXTO: {cor}\033[m")
+        print (f"\033[1;4;{código};40mFUNDO: CINZA, TEXTO: {cor}\033[m")
     elif fundo == "NENHUM":
         print (f"\033[1;4;{código}mFUNDO: NENHUM, TEXTO: {cor}\033[m")
     else:
