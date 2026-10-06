@@ -5,16 +5,8 @@
 # Se já passou do tempo do alistamento.
 
 # Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
-idade = int(input("O seu ano de nascimento: "))
+
 from datetime import date
-ano = date.today().year
-faltam = ano - idade
-
-if faltam == 18:
-    print ("É hora de se alistar ao serviço militar!")
-elif faltam <17:
-    print ("Você ainda vai precisar se alistar.")
-elif faltam >= 19:
-    print ("Já passou do tempo de se alistar!")
-
-    
+atual = date.today().year
+nasc = int(input("Ano de nascimento: "))
+idade = atual - nasc
